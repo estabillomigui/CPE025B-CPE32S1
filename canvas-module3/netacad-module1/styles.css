@@ -1,0 +1,29 @@
+h1{
+  font-size: 18px;
+  color: blue;
+}
+/* Increase the font size for the main heading to make it stand out */
+h1 {
+    font-size: 36px;
+}
+.button {
+  background-color: blue;
+  color: white;
+}
+#header {
+  font-size: 24px;
+  color: green;
+}
+[data-highlight] {
+  background-color: yellow;
+}
+.parent {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 10px;
+}
+p {
+  font-size: 20px;
+  color: green;
+}
