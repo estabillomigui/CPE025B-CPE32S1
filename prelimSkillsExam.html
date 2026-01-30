@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>RPG Class Survey</title>
+       <style>
+            h1,p{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            label{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body{
+                background-color: beige;
+                text-align: center;
+            }
+            form{
+                border: 1px solid black;
+                border-radius: 2%;
+                margin-top: 2%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 1%;
+                width: 30%;
+                background-color: mintcream;
+            }
+       </style>
+    </head>
+    <body>
+        <h1 id="title">RPG Class Survey</h1>
+
+        <p id="description">This is a short survey about RPGs and your favorite classes</p>
+        
+        <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        <br>
+        <br>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        <br>
+        <br>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" placeholder="Age" min="12" max="80" required>
+        <br>
+
+        <p>What is your gender?</p>
+        <label id="male-label" for="male">Male</label>
+        <input type="radio" id="male" name="male" value="male">
+        <label id="female-label" for="female">Female</label>
+        <input type="radio" id="female" name="female" value="female">
+        <label id="prefer-label" for="prefer">Prefer not to say</label>
+        <input type="radio" id="prefer" name="prefer" value="prefer">
+        <br>
+        <br>
+
+        <label id="drop-label" for="dropdown">What kind of gamer are you?</label>
+        <select id="dropdown" name="status">
+            <option value="">Select an option</option>
+            <option value="Casual">Casual</option>
+            <option value="Hardcore">Hardcore</option>
+        </select>
+        <br>
+
+        <p>What class do you life to play as?<br>(You may choose multiple classes)</p>
+        <label for="class1">Fighter</label>
+        <input type="checkbox" id="class1" name="classes" value="Fighter">
+        <label for="class2">Thief</label>
+        <input type="checkbox" id="class2" name="classes" value="Thief">
+        <label for="class3">Ranger</label>
+        <input type="checkbox" id="class3" name="classes" value="Ranger">
+        <label for="class5">Mage</label>
+        <input type="checkbox" id="class4" name="classes" value="Mage">
+        <label for="class6">Priest</label>
+        <input type="checkbox" id="class5" name="classes" value="Priest">
+        <br>
+        <br>
+
+        <label for="comments">Additional Comments:</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any additional comments here"></textarea>
+        <br>
+
+        <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
